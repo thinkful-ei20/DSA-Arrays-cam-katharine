@@ -1,0 +1,4 @@
+Push takes a value as a parameter
+It takes the Array(class)'s length and adds 1
+It then uses memory.set, 1st parameter = memory at 'this.ptr' and adds length, and sets it to the 2nd parameter 'value'
+Then increments Array(class) length by 1
