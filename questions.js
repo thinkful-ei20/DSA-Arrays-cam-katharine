@@ -1,7 +1,7 @@
 // URLify a string: O(n)
 let URLify = string => string.replace(/ /g, '%20');
-// console.log(URLify('tauhida parveen'));
-// console.log(URLify('www.thinkful.com/tauh ida parv veen'));
+console.log(URLify('tauhida parveen'));
+console.log(URLify('www.thinkful.com/tauh ida parv veen'));
 
 
 // Filtering an array: O(n)
@@ -16,7 +16,7 @@ let filterArray = arr => {
   return filteredArray;
 }
 const arr1 = [5, 6, 7, 1, 2, 8]; // 5, 6, 7, 8
-// console.log(filterArray(arr1));
+console.log(filterArray(arr1));
 
 
 // Max sum in the array: O(n)
@@ -33,7 +33,7 @@ let maxSumInArray = arr => {
   return max;
 }
 arr2 = [4, 6, -3, 5, -2, 1];
-// console.log(maxSumInArray(arr2)); // 12
+console.log(maxSumInArray(arr2)); // 12
 
 
 // Merge Arrays: O(n)
@@ -44,7 +44,7 @@ const mergeArrays = (arr1, arr2) => {
 
 arr3 = [1, 3, 6, 8, 11];
 arr4 = [2, 3, 5, 8, 9, 10];
-// console.log(mergeArrays(arr3, arr4));
+console.log(mergeArrays(arr3, arr4));
 
 
 //Remove characters: O(n ^ 2)
@@ -117,11 +117,7 @@ console.log(array2D(arr6));
 // String rotation
 const stringRotation = (string1, string2) => {
   let newStr1 = string1.slice(0, 2);
-
-  if (string2.lastIndexOf(newStr1) > -1) {
-    return true;
-  }
-  return false;
+  return (string2.lastIndexOf(newStr1) > -1) ? true : false; 
 }
 
 console.log(stringRotation('amazon', 'azonma')) // false
